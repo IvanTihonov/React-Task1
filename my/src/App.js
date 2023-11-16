@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 export const App = () => {
-	return (
+	// имеративный стиль идет до вывода текущего года. Выводтекущего года произведен в декларативном стиле
+    return (
 		<div className="App">
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
@@ -17,6 +18,9 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+                <p>
+                    {new Date().getFullYear()}
+                </p>
 			</header>
 		</div>
 	);
